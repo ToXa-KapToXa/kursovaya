@@ -1,0 +1,326 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Мир музыки - Гитары</title>
+
+    <!-- Google font -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700" rel="stylesheet">
+
+    <!-- Bootstrap -->
+    <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css"/>
+
+    <!-- Slick -->
+    <link type="text/css" rel="stylesheet" href="css/slick.css"/>
+    <link type="text/css" rel="stylesheet" href="css/slick-theme.css"/>
+
+    <!-- Иконки -->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+
+    <link type="text/css" rel="stylesheet" href="css/style.css"/>
+
+    <link rel="shortcut icon" href="img/logo.png" type="image/png">
+
+</head>
+<body>
+<!-- ШАПКА САЙТА -->
+<div th:insert="fragments/header :: header"></div>
+<!-- /ШАПКА САЙТА -->
+<!-- НАВИГАЦИЯ -->
+<div th:insert="fragments/navigation :: navigation"></div>
+<!-- /НАВИГАЦИЯ -->
+<!-- СЕКЦИЯ -->
+<div class="section">
+    <!-- БЛОК -->
+    <div class="container">
+        <!-- РЯД -->
+        <div class="row">
+
+            <!-- ГИТАРЫ -->
+            <div class="col-md-12">
+                <div class="section-title">
+                    <h3 class="title">Гитары</h3>
+                </div>
+            </div>
+            <!-- /ГИТАРЫ -->
+            <!-- ВКЛАДКИ -->
+            <div class="col-md-12">
+                <div class="row">
+                    <!-- ВКЛАДКА 1 ГИТАРЫ -->
+                    <div class="product1">
+                        <!-- ТОВАР 1 -->
+                        <div class="product">
+                            <div class="product-img">
+                                <img src="./img/guitars/guitar1.jpeg" alt="YAMAHA F310">
+                                <div class="product-label">
+                                    <span class="new">НОВИНКА</span>
+                                </div>
+                            </div>
+                            <div class="product-body">
+                                <p class="product-category">Гитары</p>
+                                <h3 class="product-name"><a href="#">YAMAHA F310</a></h3>
+                                <h4 class="product-price">13 500 ₽</h4>
+                                <div class="product-rating">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                            </div>
+                            <div class="add-to-cart">
+                                <a th:href="@{/products/11/bucket}"><button class="add-to-cart-btn plus"><i class="fa fa-shopping-cart"></i> В корзину</button></a>
+                            </div>
+                        </div>
+                        <!-- /ТОВАР 1 -->
+                        <!-- ТОВАР 2 -->
+                        <div class="product">
+                            <div class="product-img">
+                                <img src="./img/guitars/guitar2.jpg" alt="FENDER CD-60 DREAD V3 DS BLK WN">
+                                <div class="product-label">
+                                    <span class="new">НОВИНКА</span>
+                                </div>
+                            </div>
+                            <div class="product-body">
+                                <p class="product-category">Гитары</p>
+                                <h3 class="product-name"><a href="#">FENDER CD-60 DREAD V3</a></h3>
+                                <h4 class="product-price">19 600 ₽</h4>
+                                <div class="product-rating">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                            </div>
+                            <div class="add-to-cart">
+                                <a th:href="@{/products/12/bucket}"><button class="add-to-cart-btn plus"><i class="fa fa-shopping-cart"></i> В корзину</button></a>
+                            </div>
+                        </div>
+                        <!-- /ТОВАР 2 -->
+                        <!-- ТОВАР 3-->
+                        <div class="product">
+                            <div class="product-img">
+                                <img src="./img/guitars/guitar3.jpg" alt="IBANEZ PF15ECE-BK">
+                                <div class="product-label">
+                                    <span class="new">НОВИНКА</span>
+                                </div>
+                            </div>
+                            <div class="product-body">
+                                <p class="product-category">Гитары</p>
+                                <h3 class="product-name"><a href="#">IBANEZ PF15ECE-BK</a></h3>
+                                <h4 class="product-price">29 200 ₽</h4>
+                                <div class="product-rating">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                            </div>
+                            <div class="add-to-cart">
+                                <a th:href="@{/products/13/bucket}"><button class="add-to-cart-btn plus"><i class="fa fa-shopping-cart"></i> В корзину</button></a>
+                            </div>
+                        </div>
+                        <!-- /ТОВАР 3 -->
+                        <!-- ТОВАР 4 -->
+                        <div class="product">
+                            <div class="product-img">
+                                <img src="./img/guitars/guitar4.jpg" alt="FENDER SQUIER BULLET TREM">
+                                <div class="product-label">
+                                    <span class="new">НОВИНКА</span>
+                                </div>
+                            </div>
+                            <div class="product-body">
+                                <p class="product-category">Гитары</p>
+                                <h3 class="product-name"><a href="#">FENDER SQUIER BULLET TREM</a></h3>
+                                <h4 class="product-price">24 500 ₽</h4>
+                                <div class="product-rating">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                            </div>
+                            <div class="add-to-cart">
+                                <a th:href="@{/products/14/bucket}"><button class="add-to-cart-btn plus"><i class="fa fa-shopping-cart"></i> В корзину</button></a>
+                            </div>
+                        </div>
+                        <!-- /ТОВАР 4 -->
+                        <!-- ТОВАР 5 -->
+                        <div class="product">
+                            <div class="product-img">
+                                <img src="./img/guitars/guitar5.jpeg" alt="Yamaha CG122MC">
+                                <div class="product-label">
+                                    <span class="new">НОВИНКА</span>
+                                </div>
+                            </div>
+                            <div class="product-body">
+                                <p class="product-category">Гитары</p>
+                                <h3 class="product-name"><a href="#">Yamaha CG122MC</a></h3>
+                                <h4 class="product-price">20 990 ₽</h4>
+                                <div class="product-rating">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                            </div>
+                            <div class="add-to-cart">
+                                <a th:href="@{/products/15/bucket}"><button class="add-to-cart-btn plus"><i class="fa fa-shopping-cart"></i> В корзину</button></a>
+                            </div>
+                        </div>
+                        <!-- /ТОВАР 5 -->
+                        <!-- ТОВАР 6 -->
+                        <div class="product">
+                            <div class="product-img">
+                                <img src="./img/guitars/guitar6.jpg" alt="ROCKDALE Aurora D1 C BK">
+                                <div class="product-label">
+                                    <span class="sale">-30%</span>
+                                </div>
+                            </div>
+                            <div class="product-body">
+                                <p class="product-category">Гитары</p>
+                                <h3 class="product-name"><a href="#">ROCKDALE Aurora D1 C BK</a></h3>
+                                <h4 class="product-price">5 590 ₽ <del class="product-old-price">7 990 ₽</del></h4>
+                                <div class="product-rating">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                            </div>
+                            <div class="add-to-cart">
+                                <a th:href="@{/products/16/bucket}"><button class="add-to-cart-btn plus"><i class="fa fa-shopping-cart"></i> В корзину</button></a>
+                            </div>
+                        </div>
+                        <!-- /ТОВАР 6 -->
+                        <!-- ТОВАР 7 -->
+                        <div class="product">
+                            <div class="product-img">
+                                <img src="./img/guitars/guitar7.jpg" alt="Belucci BC3820 RDS">
+                                <div class="product-label">
+                                    <span class="sale">-20%</span>
+                                    <span class="new">НОВИНКА</span>
+                                </div>
+                            </div>
+                            <div class="product-body">
+                                <p class="product-category">Гитары</p>
+                                <h3 class="product-name"><a href="#">Belucci BC3820 RDS</a></h3>
+                                <h4 class="product-price">22 390 ₽ <del class="product-old-price">27 990 ₽</del></h4>
+                                <div class="product-rating">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                            </div>
+                            <div class="add-to-cart">
+                                <a th:href="@{/products/17/bucket}"><button class="add-to-cart-btn plus"><i class="fa fa-shopping-cart"></i> В корзину</button></a>
+                            </div>
+                        </div>
+                        <!-- /ТОВАР 7 -->
+                        <!-- ТОВАР 8 -->
+                        <div class="product">
+                            <div class="product-img">
+                                <img src="./img/guitars/guitar8.jpg" alt="IBANEZ GRX70QA-TRB">
+                                <div class="product-label">
+                                    <span class="sale">-10%</span>
+                                </div>
+                            </div>
+                            <div class="product-body">
+                                <p class="product-category">Гитары</p>
+                                <h3 class="product-name"><a href="#">IBANEZ GRX70QA-TRB</a></h3>
+                                <h4 class="product-price">27 000 ₽ <del class="product-old-price">30 000 ₽</del></h4>
+                                <div class="product-rating">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                            </div>
+                            <div class="add-to-cart">
+                                <a th:href="@{/products/18/bucket}"><button class="add-to-cart-btn plus"><i class="fa fa-shopping-cart"></i> В корзину</button></a>
+                            </div>
+                        </div>
+                        <!-- /ТОВАР 8 -->
+                        <!-- ТОВАР 9 -->
+                        <div class="product">
+                            <div class="product-img">
+                                <img src="./img/guitars/guitar9.jpg" alt="JACKSON JS22 DK">
+                                <div class="product-label">
+                                    <span class="sale">-50%</span>
+                                    <span class="new">НОВИНКА</span>
+                                </div>
+                            </div>
+                            <div class="product-body">
+                                <p class="product-category">Гитары</p>
+                                <h3 class="product-name"><a href="#">JACKSON JS22 DK</a></h3>
+                                <h4 class="product-price">25 000 ₽ <del class="product-old-price">50 000 ₽</del></h4>
+                                <div class="product-rating">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                            </div>
+                            <div class="add-to-cart">
+                                <a th:href="@{/products/19/bucket}"><button class="add-to-cart-btn plus"><i class="fa fa-shopping-cart"></i> В корзину</button></a>
+                            </div>
+                        </div>
+                        <!-- /ТОВАР 9 -->
+                        <!-- ТОВАР 10 -->
+                        <div class="product">
+                            <div class="product-img">
+                                <img src="./img/guitars/guitar10.jpg" alt="YAMAHA C40M">
+                                <div class="product-label">
+                                    <span class="sale">-70%</span>
+                                </div>
+                            </div>
+                            <div class="product-body">
+                                <p class="product-category">Гитары</p>
+                                <h3 class="product-name"><a href="#">YAMAHA C40M</a></h3>
+                                <h4 class="product-price">15 000 ₽ <del class="product-old-price">50 000 ₽</del></h4>
+                                <div class="product-rating">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                            </div>
+                            <div class="add-to-cart">
+                                <a th:href="@{/products/20/bucket}"><button class="add-to-cart-btn plus"><i class="fa fa-shopping-cart"></i> В корзину</button></a>
+                            </div>
+                        </div>
+                        <!-- /ТОВАР 10 -->
+                    </div>
+                    <!-- /ВКЛАДКА 1 ГИТАРЫ -->
+                </div>
+            </div>
+            <!-- /ВКЛАДКИ -->
+        </div>
+        <!-- /РЯД -->
+    </div>
+    <!-- /БЛОК -->
+</div>
+<!-- /СЕКЦИЯ -->
+<!-- ПОДВАЛ -->
+<div th:insert="fragments/footer :: footer"></div>
+<!-- /ПОДВАЛ -->
+<!-- jQuery Plugins -->
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/jquery.zoom.min.js"></script>
+<script src="js/main.js"></script>
+<script src="js/cart.js"></script>
+<script src="js/search.js"></script>
+
+</body>
+</html>

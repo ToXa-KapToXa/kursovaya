@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ru" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Авторизация</title>
+
+    <!-- Google font -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700" rel="stylesheet">
+
+    <!-- Bootstrap -->
+    <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css"/>
+
+    <!-- Slick -->
+    <link type="text/css" rel="stylesheet" href="css/slick.css"/>
+    <link type="text/css" rel="stylesheet" href="css/slick-theme.css"/>
+
+    <!-- Иконки -->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+
+    <link type="text/css" rel="stylesheet" href="css/style.css"/>
+    <link type="text/css" rel="stylesheet" href="css/registration.css"/>
+
+</head>
+<body>
+<!-- ШАПКА САЙТА -->
+<header>
+    <div id="header">
+        <!-- БЛОК -->
+        <div class="container">
+            <!-- РЯД -->
+            <div class="row">
+                <!-- ЛОГО -->
+                <div class="col-md-3">
+                    <div class="header-logo">
+                        <a href="/" class="logo">
+                            <img src="img/logo.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+                <!-- /ЛОГО -->
+
+
+                <div class="col-md-3 clearfix">
+                    <div class="header-ctn">
+
+                        <!-- МЕНЮ -->
+                        <div class="menu-toggle">
+                            <a href="#">
+                                <i class="fa fa-bars"></i>
+                                <span>Меню</span>
+                            </a>
+                        </div>
+                        <!-- /МЕНЮ -->
+                    </div>
+                </div>
+            </div>
+            <!-- РЯД -->
+        </div>
+        <!-- БЛОК -->
+    </div>
+</header>
+<!-- /ШАПКА САЙТА -->
+
+<!--Form-->
+<div class="wr">
+    <div class="wrapper">
+        <!-- error message -->
+        <div th:if="${param.error}">
+            <div class="alert alert-danger">Неверный email или пароль.</div>
+        </div>
+
+        <!-- logout message -->
+        <div th:if="${param.logout}">
+            <div class="alert alert-info">Вы вышли из аккаунта!</div>
+        </div>
+
+        <form th:action="@{/login}" method="post">
+            <header style="padding-bottom: 30px; margin-top: 10px">Вход</header>
+            <div class="heading-line" style="margin-bottom: 30px; margin-top: -3px"></div>
+
+            <div class="field email">
+                <div class="input-area">
+                    <input type="text" id ="username" name = "username" placeholder="Login" autofocus="autofocus">
+                    <i class="fa fa-user" id="loginEmail"></i>
+                    <i class="error error-icon fas fa-exclamation-circle"></i>
+                </div>
+            </div>
+
+            <div class="field password">
+                <div class="input-area">
+                    <input type="password" id="password" name = "password" placeholder="Password" autofocus="autofocus">
+                    <i class="fa fa-lock" id="loginPassword"></i>
+                    <i class="error error-icon fas fa-exclamation-circle"></i>
+                </div>
+            </div>
+
+            <div>
+                <button type="submit" name="login-submit" id="login-submit"
+                        class="form-control btn btn-primary" style="background: #9e8a78; border-color: #9e8a78;">Войти</button>
+            </div>
+            <div>
+                <span class="spann">Нет аккаунта? <a style="color: #9e8a78" href="/" th:href="@{/registration}">Зарегистрируйтесь.</a></span>
+            </div>
+        </form>
+    </div>
+</div>
+<!--Form-->
+
+<!-- ПОДВАЛ -->
+<div th:insert="fragments/footer :: footer"></div>
+<!-- /ПОДВАЛ -->
+<!-- jQuery Plugins -->
+<script src="../static/js/jquery.min.js"></script>
+<script src="../static/js/bootstrap.min.js"></script>
+<script src="../static/js/slick.min.js"></script>
+<script src="../static/js/jquery.zoom.min.js"></script>
+<script src="../static/js/main.js"></script>
+<script src="../static/js/search.js"></script>
+<script src="../static/js/cart.js"></script>
+
+</body>
+</html>

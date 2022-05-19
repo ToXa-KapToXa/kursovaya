@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ru" xmlns:th="http://www.w3.org/1999/xhtml" xmlns:sec="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Корзина</title>
+
+    <!-- Google font -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700" rel="stylesheet">
+
+    <!-- Bootstrap -->
+    <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css"/>
+
+    <!-- Slick -->
+    <link type="text/css" rel="stylesheet" href="css/slick.css"/>
+    <link type="text/css" rel="stylesheet" href="css/slick-theme.css"/>
+
+    <!-- Иконки -->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+
+    <link type="text/css" rel="stylesheet" href="css/style.css"/>
+
+    <link rel="shortcut icon" href="img/logo.png" type="image/png">
+</head>
+<body>
+
+<!-- ШАПКА САЙТА -->
+<div th:insert="fragments/header :: header"></div>
+<!-- /ШАПКА САЙТА -->
+<!-- НАВИГАЦИЯ -->
+<div th:insert="fragments/navigation :: navigation"></div>
+<!-- /НАВИГАЦИЯ -->
+
+
+
+
+<!-- СЕКЦИЯ -->
+<div class="section">
+    <!-- БЛОК -->
+    <div class="container">
+        <!-- РЯД -->
+        <div class="row">
+            <h2>Ваша корзина</h2>
+            <div>
+
+                <div class="product-widget" th:each="detail : ${bucket.bucketDetails}">
+                    <div class="product-img">
+                        <img th:src="${detail.image_url}" alt="">
+                    </div>
+                    <div class="product-body">
+                        <h3 class="product-name"><a href="#" th:text="${detail.title}">YAMAHA F310</a></h3>
+                        <h4 class="product-price" th:text="${detail.price}">₽13.500</h4>
+                        <span class="qty"><span th:text="${detail.amount}"></span>x</span>
+                    </div>
+                    <div>
+                        <a th:href="@{/products/{id}/deletebucket(id=${detail.productId})}"><button class="add-to-cart-btn plus">Удалить</button></a>
+                    </div>
+                </div>
+            </div>
+
+           <!-- <table border="1" align="center">
+                <tr>
+                    <td>Title</td>
+                    <td>Amount</td>
+                    <td>Price</td>
+                    <td>Sum</td>
+                    <td></td>
+                </tr>
+                <tr th:each="detail : ${bucket.bucketDetails}">
+                    <td th:text="${detail.title}">Cheese</td>
+                    <td th:text="${detail.amount}">2</td>
+                    <td th:text="${detail.price}">11.0</td>
+                    <td th:text="${detail.sum}">22</td>
+                    <td><a href="#">Remove</a></td>
+                </tr>
+            </table>-->
+
+            <h3 id="itogoo">Итого: ₽<b th:text="${bucket.sum}">1000</b></h3>
+
+        </div>
+        <!-- РЯД -->
+    </div>
+    <!-- БЛОК -->
+</div>
+<!-- СЕКЦИЯ -->
+
+<!--<form th:action="@{/bucket}" method="post">
+    <button type="submit">Create Order</button>
+</form>-->
+
+<!-- ПОДВАЛ -->
+<div th:insert="fragments/footer :: footer"></div>
+<!-- /ПОДВАЛ -->
+</body>
+</html>

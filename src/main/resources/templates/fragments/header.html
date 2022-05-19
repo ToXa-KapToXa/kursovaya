@@ -1,0 +1,144 @@
+<div th:fragment="header">
+    <header>
+    <div id="header">
+        <!-- БЛОК -->
+        <div class="container">
+            <!-- РЯД -->
+            <div class="row">
+                <!-- ЛОГО -->
+                <div class="col-md-3">
+                    <div class="header-logo">
+                        <a href="/" class="logo">
+                            <img src="img/logo.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+                <!-- /ЛОГО -->
+                <!-- ПОИСКОВИК -->
+                <div class="col-md-6">
+                    <div class="header-search">
+
+                        <input class="input" placeholder="Поиск по магазину">
+
+                        <ul class="search_list">
+                            <!-- ГИТАРЫ -->
+                            <li><a href="/yamaha_f310" class="search-elem">YAMAHA F310</a></li>
+                            <li><a href="#" class="search-elem">FENDER CD-60 DREAD V3</a></li>
+                            <li><a href="#" class="search-elem">IBANEZ PF15ECE-BK</a></li>
+                            <li><a href="#" class="search-elem">FENDER SQUIER BULLET TREM</a></li>
+                            <li><a href="#" class="search-elem">YAMAHA CG122MC</a></li>
+                            <li><a href="#" class="search-elem">ROCKDALE AURORA D1 C BK</a></li>
+                            <li><a href="#" class="search-elem">BELUCCI BC3820 RDS</a></li>
+                            <li><a href="#" class="search-elem">IBANEZ GRX70QA-TRB</a></li>
+                            <li><a href="#" class="search-elem">JACKSON JS22 DK</a></li>
+                            <li><a href="#" class="search-elem">YAMAHA C40M</a></li>
+                            <!-- КЛАВИШНЫЕ -->
+                            <li><a href="#" class="search-elem">YAMAHA P-45 BLACK</a></li>
+                            <li><a href="#" class="search-elem">CASIO CT-S1WE</a></li>
+                            <li><a href="#" class="search-elem">YAMAHA YDP-144WH</a></li>
+                            <li><a href="#" class="search-elem">KORG PA600</a></li>
+                            <li><a href="#" class="search-elem">SAMICK SIG50D/EBHP</a></li>
+                            <li><a href="#" class="search-elem">CASIO CT-X3000</a></li>
+                            <li><a href="#" class="search-elem">ROLAND GO-61K</a></li>
+                            <li><a href="#" class="search-elem">CASIO CELVIANO AP-270BN</a></li>
+                            <li><a href="#" class="search-elem">YAMAHA YDP-144R</a></li>
+                            <li><a href="#" class="search-elem">SAMICK JS143F/EBST</a></li>
+                            <!-- УДАРНЫЕ -->
+                            <li><a href="#" class="search-elem">TAMA SG52KH4-BK</a></li>
+                            <li><a href="#" class="search-elem">PEARL RSJ465C/C31</a></li>
+                            <li><a href="#" class="search-elem">FLIGHT FK-10RD</a></li>
+                            <li><a href="#" class="search-elem">ALESIS NITRO MESH KIT</a></li>
+                            <li><a href="#" class="search-elem">ROLAND TD-17KVX</a></li>
+                            <li><a href="#" class="search-elem">SONOR 17503735 AQ2</a></li>
+                            <li><a href="#" class="search-elem">PEARL RS525SC/C707</a></li>
+                            <li><a href="#" class="search-elem">YAMAHA DD-75</a></li>
+                            <li><a href="#" class="search-elem">SOUNDKING SD30M</a></li>
+                            <li><a href="#" class="search-elem">ROCKDALE DRUMS SD61-3</a></li>
+                            <!-- МУЗЫКАЛЬННОЕ ОБОРУДОВАНИЕ -->
+                            <li><a href="#" class="search-elem">JBL EON612</a></li>
+                            <li><a href="#" class="search-elem">JBL PRX835W</a></li>
+                            <li><a href="#" class="search-elem">BEHRINGER X1204USB</a></li>
+                            <li><a href="#" class="search-elem">STEINBERG UR12 USB</a></li>
+                            <li><a href="#" class="search-elem">MACKIE BIG KNOB</a></li>
+                            <li><a href="#" class="search-elem">WAVES RESTORATION</a></li>
+                            <li><a href="#" class="search-elem">ART CLEANBOX PRO</a></li>
+                            <li><a href="#" class="search-elem">PRESONUS FADERPORT 8</a></li>
+                            <li><a href="#" class="search-elem">TANNOY GOLD 5</a></li>
+                            <li><a href="#" class="search-elem">MONKEY BANANA TURBO</a></li>
+                        </ul>
+
+                    </div>
+                </div>
+                <!-- /ПОИСКОВИК -->
+
+                <div class="col-md-3 clearfix">
+                    <div class="header-ctn">
+                        <!-- КОРЗИНА -->
+                        <div class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">
+                                <a href="/bucket" class="btn btn-entrance"><i class="fa fa-shopping-cart"></i>
+                                <span>Корзина</span>
+                                </a>
+                                <!--<div class="qty">0</div>-->
+                            </a>
+                            <div class="cart-dropdown">
+                                <div class="cart-list">
+                                    <!--<div class="product-widget" th:each="detail : ${bucket.bucketDetails}">
+                                        <div class="product-img">
+                                            <img th:src="${detail.image_url}" alt="">
+                                        </div>
+                                        <div class="product-body">
+                                            <h3 class="product-name"><a href="#" th:text="${detail.title}">YAMAHA F310</a></h3>
+                                            <h4 class="product-price" th:text="${detail.price}">₽13.500</h4>
+                                            <span class="qty"><span th:text="${detail.amount}"></span>x</span>
+                                        </div>-->
+                                </div>
+
+                                <div class="cart-summary">
+                                    <div class="itogo"><h5>ИТОГО:</h5></div>
+                                    <div class="fullprice"></div>
+                                </div>
+
+                                <div class="cart-btns">
+                                    <a href="#">Оплатить  <i class="fa fa-arrow-circle-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /КОРЗИНА -->
+
+                    <div>
+                        <div class="nav-item dropdown">
+                            <a sec:authorize="isAuthenticated()" class="btn btn-entrance dropdown-toggle" id="upp" data-toggle="dropdown" aria-expanded="true">
+                                <i class="fa fa-user-o"></i>
+                                <div sec:authorize="isAuthenticated()" sec:authentication="principal.username" id="navbarDropdown" class="nav-link username">
+                                    Dropdown
+                                </div>
+                            </a>
+
+                            <ul sec:authorize="isAuthenticated()" class="dropdown-menu" aria-labelledby="upp">
+                                <li><a class="dropdown-item" href="#" th:href="@{/logout}">Выйти</a></li>
+                            </ul>
+                        </div>
+                        <a href="#" sec:authorize="!isAuthenticated()" class="btn btn-entrance" th:href="@{/login}">
+                            <i class="fa fa-user-o"></i>
+                            <span>Войти</span>
+                        </a>
+                    </div>
+
+                    <!-- МЕНЮ -->
+                        <div class="menu-toggle">
+                            <a href="#">
+                                <i class="fa fa-bars"></i>
+                                <span>Меню</span>
+                            </a>
+                        </div>
+                        <!-- /МЕНЮ -->
+                    </div>
+                </div>
+            </div>
+            <!-- РЯД -->
+        </div>
+        <!-- БЛОК -->
+    </div>
+</header>
+</div>
